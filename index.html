@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="#">
   <meta property="og:image" content="#">
-  
+
 <!-- ADD link to stylesheet -->
   <link rel="stylesheet" href="styles.css">
   <title>Civic Lens</title>
@@ -22,6 +22,8 @@
 <body>
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
+
+<header>
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
       <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -29,11 +31,12 @@
       </svg>
     </button>
 
-      Civic Lens
+      <h1>Civic Lens</h1>
       <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
+
+      <input type="checkbox" id="menu-toggle" hidden>
       
       <nav class="mobile-nav" aria-label="Mobile Navigation">
-        <input type="checkbox" id="menu-toggle" hidden>
         <label for="menu-toggle" class="menu-button">Menu</label>
         <ul class="menu">
           <li><a href="#breaking-news">Breaking News</a></li>
@@ -42,11 +45,14 @@
           <li><a href="#social">Social</a></li>
         </ul>
       </nav>
-      
-      Welcome to Civic Lens
-        We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-        <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+</header>      
 
+<main id="main-content">
+  <section aria-labelledby="welcome-heading">
+    <h2 id="welcome-heading">Welcome to Civic Lens</h2>
+        <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
+        <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+  </section>  
       Breaking News
 
         Federal Investigation Launched into Water Mismanagement in the Southwest
