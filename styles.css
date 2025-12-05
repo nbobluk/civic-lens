@@ -93,6 +93,12 @@ body.dark-mode {
   text-decoration: none;
   z-index: 10000;
 }
+
+#skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* ///ADD/// Navigation Styles */
 
 /* ///ADD/// Global Layout Styles */
