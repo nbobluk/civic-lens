@@ -322,18 +322,71 @@ footer {
 
 
 /* ///ADD/// medium styles 620px */
+@media (min-width: 620px) {
+  #featured-aticles section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  #breaking-news section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex !important;
+  }
+}
 
 /* ///ADD/// large styles 920px */
+@media (min-width: 920px) {
+  .menu-button {
+    display: none;
+  }
 
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
+  #featured-aticles section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* ///ADD/// x-large styles 1024px */
+@media (min-width: 1024px) {
+  main {
+    max-width: var(--page-max-width);
+  }
+}
+
 
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    background-color: var(--truth-text);
+    color: var(--watchdog-white);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
 
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
+  header:has(#menu-toggle:checked) .menu {
+    display: flex;
+  }
 
+  header:has(#menu-toggle:checked) .menu-button {
+    outline: 2px solid var(--watchdog-white);
 }
