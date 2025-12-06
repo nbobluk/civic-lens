@@ -100,10 +100,225 @@ body.dark-mode {
 }
 
 /* ///ADD/// Navigation Styles */
+header {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 2rem var(--gutter) 1.5rem;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+header .tagline {
+  margin: 0.25rem 0 0.5rem;
+}
+
+#menu-toggle {
+  position: absolute;
+  opacity: 0;
+}
+
+.menu-button {
+  display: inline-block;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.75rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.menu li a {
+  display: block;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 
 /* ///ADD/// Global Layout Styles */
 
-/* ///ADD/// Global Text Styles */
+main {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 2rem var(--gutter) 4rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2, h3 {
+  font-family: var(--font-heading);
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.45rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+blockquote {
+  font-style: italic;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#breaking-news section {
+  display: grid;
+  gap: 1.25rem;
+}
+
+#breaking-news article {
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: var(--shadow);
+}
+
+#breaking-news video {
+  width: 100%;
+  display: block;
+  margin-top: 0.75rem;
+}
+
+#featured-aticles section {
+  display: grid;
+  gap: 1.25rem;
+}
+
+#featured-aticles article {
+  background-color: #f4fbf6;
+  border: 1px solid var(--card-border-light);
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+}
+
+#breaking-news video {
+  width: 100%;
+  display: block;
+  margin-top: 0.75rem;
+}
+
+#featured-aticles section {
+  display: grid;
+  gap: 1.25rem;
+}
+
+#featured-aticles article {
+  background-color: #f4fbf6;
+  border: 1px solid var(--card-border-light);
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+}
+
+body.dark-mode #featured-aticles article {
+  background-color: #2d3133;
+  border-color: var(--card-border-dark);
+}
+
+form {
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  box-shadow: var(--shadow);
+}
+
+fieldset {
+  border: 1px solid rgba(255,255,255,0.65);
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.25rem;
+}
+
+legend {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 0 0.4rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0.55rem;
+  border: none;
+  margin-bottom: 0.85rem;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--watchdog-white);
+}
+
+button[type="submit"] {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+#social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+#social li {
+  background-color: var(--news-flash);
+  padding: 0.45rem 0.8rem;
+  color: var(--watchdog-white);
+  border-radius: 0.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+footer {
+  background-color: var(--footer-blue);
+  color: var(--watchdog-white);
+  text-align: center;
+  padding: 1.3rem;
+  font-size: 0.9rem;
+}
 
 
 /* ///ADD/// medium styles 620px */
